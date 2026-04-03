@@ -15,4 +15,7 @@ def compute(expression):
     print('unknown operator!')
     return None
 
-print(compute('5 + 8'))
+expression = input("Enter an expression (e.g. 5 + 8): ")
+result = compute(expression)
+if result is not None:
+    print(f"Result: {result}")
